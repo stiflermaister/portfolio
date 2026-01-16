@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>To-Do Mini lista zadataka | Stefan Pejin</title>
+
+  <meta name="description" content="To-Do Mini lista zadataka je jednostavna web aplikacija (HTML, CSS, JavaScript) za dodavanje, označavanje i brisanje zadataka. Autor: Stefan Pejin IT49/23.">
+  <meta name="keywords" content="to-do lista, lista zadataka, to-do aplikacija, JavaScript projekat, web aplikacija">
+
+  <link rel="canonical" href="https://darling-basbousa-009b72.netlify.app">
+  <link rel="icon" href="grade.png" sizes="any">
+  <link rel="stylesheet" href="style.css">
+
+  <meta property="og:title" content="To-Do Mini lista zadataka">
+<meta property="og:description" content="Jednostavna To-Do web aplikacija u HTML, CSS i JavaScript-u.">
+<meta property="og:image" content="https://darling-basbousa-009b72.netlify.app/grade.png">
+<meta property="og:url" content="https://darling-basbousa-009b72.netlify.app/">
+<meta property="og:type" content="website">
+
+</head>
+
+<body>
+  <header class="top" id="top">
+    <img src="grade.png" alt="To-Do mini lista zadataka aplikacija" class="logo">
+    <nav class="nav">
+      <a href="#app">Aplikacija</a>
+      <a href="#uputstvo">Uputstvo</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <main class="wrap" id="app">
+    <h1>To-Do Mini lista zadataka</h1>
+
+    <p class="intro">
+      Ova To-Do Mini lista zadataka je praktičan primer web aplikacije koja koristi
+      HTML, CSS i JavaScript. Omogućava dodavanje zadataka, označavanje kao završeno
+      i brisanje stavki.
+    </p>
+
+    <div class="row">
+      <input id="taskInput" type="text" placeholder="Upiši zadatak...">
+      <button id="addBtn">Dodaj</button>
+    </div>
+
+    <ul id="list"></ul>
+
+    <section class="card2" id="uputstvo">
+      <h2>Uputstvo za To-Do listu</h2>
+      <ul class="bullets">
+        <li>Unesi tekst i klikni <strong>Dodaj</strong> (ili Enter).</li>
+        <li>Klik na tekst zadatka označava da je zadatak završen.</li>
+        <li>Dugme <strong>✖</strong> briše zadatak.</li>
+        <li>Zadaci se čuvaju u browseru pomoću localStorage mehanizma.</li>
+      </ul>
+      <p>
+        <a href="#top">Nazad na vrh</a> · <a href="#kontakt">Kontakt</a>
+      </p>
+    </section>
+
+    <footer class="footer" id="kontakt">
+      <p>
+        Student: <strong>Stefan Pejin</strong> – IT49/23<br>
+        Email: <strong>stefanpejin4@gmail.com</strong>
+      </p>
+      <p class="note">
+        Projekat je urađen kao demonstracija osnovnih funkcija u JavaScript-u i osnovne SEO optimizacije (meta opis, favicon, interna navigacija).
+      </p>
+      <p><a href="#app">Idi na aplikaciju</a></p>
+    </footer>
+  </main>
+<p><a href="#app">To-Do lista zadataka</a></p>
+
+  <a href="C:\Users\stefa\OneDrive\Desktop\portfolio\index.html" class="btn btn-default">
+    Nazad na portfolio
+  </a>
+  <script src="script.js"></script>
+</body>
+</html>

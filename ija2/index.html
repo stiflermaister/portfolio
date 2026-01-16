@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>GradeBook – evidencija studenata i ocena</title>
+
+  <meta name="description" content="GradeBook je web aplikacija za evidenciju studenata i ocena. Omogućava evidenciju studenata, unos i prikaz ocena (0–100), brisanje zapisa i automatski izveštaj sa prosekom, najboljom i najslabijom ocenom." />
+
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://darling-basbousa-009b72.netlify.app/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="sr_RS" />
+  <meta property="og:title" content="GradeBook – evidencija studenata i ocena" />
+  <meta property="og:description" content="Web aplikacija za evidenciju studenata i ocena sa unosom, prikazom liste i automatskim izveštajem." />
+  <meta property="og:url" content="https://darling-basbousa-009b72.netlify.app/" />
+
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" href="grade.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1>GradeBook – evidencija studenata i ocena</h1>
+
+      <p style="margin:6px 0 0 0;">
+        GradeBook je web aplikacija namenjena za <strong>evidenciju studenata i ocena</strong>.
+        Ova aplikacija omogućava evidenciju studenata, unos i prikaz ocena, kao i automatski izveštaj.
+      </p>
+
+     
+    </div>
+
+    <button id="themeBtn" class="btn" type="button" aria-label="Promeni temu">Tema</button>
+  </header>
+
+  <main>
+    <section id="dodaj" class="card" aria-labelledby="addTitle">
+      <h2 id="addTitle">Dodaj studenta</h2>
+      <form id="studentForm">
+        <div class="grid">
+          <label for="nameInput">Ime i prezime</label>
+          <input id="nameInput" type="text" required />
+
+          <label for="gradeInput">Ocena (0–100)</label>
+          <input id="gradeInput" type="number" min="0" max="100" required />
+        </div>
+        <button class="btn" type="submit">Dodaj</button>
+      </form>
+    </section>
+
+    <section id="studenti" class="card" aria-labelledby="studentsTitle">
+      <div class="row">
+        <h2 id="studentsTitle">Studenti</h2>
+        <button id="reportBtn" class="btn" type="button">Izveštaj</button>
+      </div>
+
+      <ul id="list" class="list"></ul>
+      <div id="report" class="report"></div>
+
+      <p style="margin-top:12px;">
+        Pogledaj i druge moje
+        <a href="https://darling-basbousa-009b72.netlify.app/"
+           title="Izrada i SEO optimizacija web sajtova">
+          projekte izrade i SEO optimizacije web sajtova
+        </a>.
+      </p>
+    </section>
+
+    <section id="o-projektu" class="card" aria-labelledby="aboutTitle">
+      <h2 id="aboutTitle">O projektu</h2>
+      <p>
+        GradeBook je mini projekat napravljen u HTML, CSS i JavaScript tehnologijama.
+        Projekat je fokusiran na evidenciju studenata i ocena kroz unos podataka,
+        prikaz liste studenata, brisanje zapisa i generisanje izveštaja.
+        Stranica je optimizovana osnovnim SEO elementima.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <small>Klik na ime briše zapis.</small>
+  </footer>
+<a href="C:\Users\stefa\OneDrive\Desktop\portfolio\index.html" class="btn btn-default">
+    Nazad na portfolio
+  </a>
+  <script src="app.js" defer></script>
+</body>
+</html>
