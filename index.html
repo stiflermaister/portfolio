@@ -1,26 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sr">
 <head>
   <title>Stefan Pejin Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
   <style>
-    
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
     }
-    
-   
+
     footer {
       background-color: #f2f2f2;
       padding: 25px;
+      margin-top: 30px;
+    }
+
+  
+    .project-card {
+      background: #fff;
+      border: 1px solid #e6e6e6;
+      border-radius: 6px;
+      padding: 12px;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .project-title {
+      display: inline-block;
+      font-size: 18px;
+      font-weight: 600;
+      margin: 0 0 8px;
+      text-decoration: none;
+    }
+
+    .project-title:hover {
+      text-decoration: underline;
+    }
+
+    .project-img {
+      width: 100%;
+      height: 220px;         
+      object-fit: cover;     
+      border-radius: 4px;
+    }
+
+    .project-meta {
+      margin-top: 10px;
+      color: #666;
+      font-size: 13px;
     }
   </style>
 </head>
+
 <body>
 
 <nav class="navbar navbar-inverse">
@@ -29,73 +66,63 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Portfolio</a>
+      <a class="navbar-brand" href="index.html">Portfolio</a>
     </div>
+
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+        <li class="active"><a href="index.html">Home</a></li>
         <li><a href="omeni.html">O meni</a></li>
-       
       </ul>
-      
     </div>
   </div>
 </nav>
 
 <div class="jumbotron">
   <div class="container text-center">
-    <h1>Moj Portfolio</h1>      
-    <p>Ispod mozete videti projekte koje sam radio za vreme studiranja</p>
+    <h1>Moj Portfolio</h1>
+    <p>Ispod možete videti projekte koje sam radio za vreme studiranja.</p>
   </div>
 </div>
-  
-<div class="container-fluid bg-3 text-center">    
-  <h3>Moji projekti</h3><br>
-  <div class="row">
-    <div class="col-sm-3">
-      <a href="todo.html">GradeBook</a>
-      <img src="C:\Users\stefa\OneDrive\Desktop\portfolio\ija2\pocetna.PNG" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <a href="seo.html">TODO lista</a>
-      <img src="C:\Users\stefa\OneDrive\Desktop\portfolio\projekatseo\pocetna.PNG" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <p>TODO lista</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p>Moje obaveze</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-  </div>
-</div><br>
 
-<div class="container-fluid bg-3 text-center">    
+<div class="container-fluid bg-3 text-center">
+  <h3>Moji projekti</h3><br>
+
   <div class="row">
-    <div class="col-sm-3">
-      <p>Prodaja štikli</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+
+
+    <div class="col-sm-4">
+      <div class="project-card">
+        <a class="project-title" href="todo.html" target="_blank">GradeBook</a>
+        <img src="ija2/pocetna.PNG" class="project-img img-responsive" alt="GradeBook screenshot">
+        <div class="project-meta">HTML • CSS • JavaScript</div>
+      </div>
     </div>
-    <div class="col-sm-3"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+
+ 
+    <div class="col-sm-4">
+      <div class="project-card">
+        <a class="project-title" href="seo.html" target="_blank">TODO lista</a>
+        <img src="projekatseo/pocetna.PNG" class="project-img img-responsive" alt="TODO lista screenshot">
+        <div class="project-meta">HTML • CSS • JavaScript</div>
+      </div>
     </div>
-    <div class="col-sm-3"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+
+    <div class="col-sm-4">
+      <div class="project-card">
+         <a class="project-title" href="stikle.html" target="_blank">Prodavnica Štikli</a>
+        <img src="stikle/pocetna.PNG" class="project-img img-responsive" alt="Treći projekat">
+        <div class="project-meta">HTML • CSS • JavaScript</div>
+      </div>
     </div>
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
+
   </div>
-</div><br><br>
+</div>
 
 <footer class="container-fluid text-center">
-  <p>Footer Text</p>
+  <p>© 2026 Stefan Pejin</p>
 </footer>
 
 </body>
